@@ -1,0 +1,41 @@
+.container {
+  background: #3a71b7;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.circle {
+  position: absolute;
+  background: #427eca;
+  height: 1800px;
+  width: 1800px;
+  border-radius: 50%;
+  z-index: 2;
+  bottom: -130%;
+  right: -90%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav > span {
+  color: white;
+  font-size: 1.75rem;
+}
+
+.nav > ul {
+  display: flex;
+  gap: 15px;
+}
+
+.nav > ul > li {
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+}
