@@ -18,11 +18,12 @@ function Form() {
       .then((res) => res.json())
       .then((data) => setResponse(data.message));
   };
-
+  console.log(response);
   return (
     <div className={styles.container}>
       <div className={styles.intro}>
-        <h2>BookBite: Your Daily Dose of Literary Summaries</h2>
+        <h1>Book Summaries</h1>
+        <h2>Your Daily Dose of Literary Summaries</h2>
         <p>
           Get quick and easy summaries of your favorite books with our
           user-friendly website app! Simply type in the title of the book you
@@ -31,19 +32,24 @@ function Form() {
           helping you decide if the book is worth a full read. Try it out now
           and discover the magic of BookBite!
         </p>
-      </div>
-      <div className={styles.form}>
         <form onSubmit={handleSubmit}>
-          <textarea
+          <input
+            className={styles.input}
+            placeholder="Enter A Book Title Here 📖"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-          ></textarea>
+          ></input>
           {/* <input type="text" placeholder="Enter a book title" /> */}
-          <button type="submit">Submit</button>
+          <button className={styles.btn} type="submit">
+            Submit
+          </button>
         </form>
       </div>
-
-      <div>{response}</div>
+      <div className={styles.response}>
+        <h2>{message}</h2>
+        <p>{response}</p>
+      </div>
+      <div className={styles.love}>Made with ❤️ by Mohamed Ali </div>
     </div>
   );
 }

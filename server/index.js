@@ -22,7 +22,7 @@ app.post("/", async (req, res) => {
 
   const response = await openai.createCompletion({
     model: "text-davinci-003",
-    prompt: `Pretend that you are a book summarizer. Please give me a short summary of the book "${message}" in under 200 characters`,
+    prompt: `Pretend that you are a book summarizer. Please give me a short summary that is concise and includes an overview of the main ideas and plot points of the book "${message}" in under 400 characters`,
     max_tokens: 100,
     temperature: 0,
   });

@@ -1,0 +1,123 @@
+.container {
+  display: flex;
+  padding: 8rem 2rem;
+  z-index: 999;
+  max-width: 1024px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro {
+  width: 50%;
+  z-index: 999;
+}
+
+.intro > h1 {
+  font-size: 3rem;
+  color: white;
+  z-index: 1000;
+}
+
+.intro > h2 {
+  font-size: 1.5rem;
+  max-width: 90%;
+  color: white;
+  font-weight: 900;
+  padding-bottom: 1rem;
+}
+
+.intro > p {
+  font-size: 1rem;
+  color: white;
+  width: 90%;
+}
+
+.intro > form {
+  padding-top: 1rem;
+}
+
+.intro > input {
+  height: 3rem;
+}
+
+.input {
+  height: 40px;
+  font-size: 1rem;
+}
+
+.btn {
+  height: 40px;
+  width: 80px;
+  background-color: white;
+  border: none;
+  text-decoration: none;
+  outline: none;
+  border-width: 0;
+  color: #3a71b7;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.response {
+  width: 50%;
+  background: white;
+  width: 40%;
+  max-width: 450px;
+  height: 600px;
+  z-index: 999;
+  box-shadow: 16px 16px 0px #3a71b7;
+  border-radius: 16px;
+  max-height: 600px;
+  min-height: 300px;
+}
+
+.response > h2 {
+  color: #3a71b7;
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.response > p {
+  color: #3a71b7;
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.3rem;
+}
+
+.love {
+  position: absolute;
+  bottom: 0.5rem;
+  z-index: 1001;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    display: flex;
+    gap: 2rem;
+    overflow: visible;
+    max-width: 100%;
+  }
+  .intro {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .input::placeholder {
+    color: #000000;
+  }
+  .response {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 600px;
+    overflow: scroll;
+  }
+}
