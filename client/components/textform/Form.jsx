@@ -27,10 +27,10 @@ function Form() {
         <p>
           Get quick and easy summaries of your favorite books with our
           user-friendly website app! Simply type in the title of the book you
-          want to summarize and hit enter. Within seconds, you'll have a concise
-          overview of the main ideas and plot points, saving you time and
-          helping you decide if the book is worth a full read. Try it out now
-          and discover the magic of BookBite!
+          want to summarize and hit enter. Within seconds, you&apos;ll have a
+          concise overview of the main ideas and plot points, saving you time
+          and helping you decide if the book is worth a full read. Try it out
+          now and discover the magic of BookBite!
         </p>
         <form onSubmit={handleSubmit}>
           <input
