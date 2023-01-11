@@ -1,3 +1,5 @@
+import "./dist/index";
+
 import { Configuration, OpenAIApi } from "openai";
 
 import bodyParser from "body-parser";
