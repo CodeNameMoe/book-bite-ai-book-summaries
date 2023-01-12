@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  "scripts": {
+ "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "build": "babel src -d dist",
-    "deploy": "npm ci && npm run build && npm install --only=dev && npm run start"
+    "build": "copyfiles -f package.json index.js openai.js dist",
+    "deploy": "npm ci && npm run build && npm run start"
   },
   "keywords": [],
   "author": "",
