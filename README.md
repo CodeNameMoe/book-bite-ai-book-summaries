@@ -2,7 +2,7 @@
 
 **[DEMO LINK](ai-book-review-app.vercel.app)**
 
-![Book Bite App](/client/public/BookBite.PNG)
+![Demo CountPages alpha](https://j.gifs.com/QkGzn0.gif)
 
 Exploring the world of OpenAI has been fascinating!
 
